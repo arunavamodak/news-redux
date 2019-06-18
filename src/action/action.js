@@ -1,6 +1,6 @@
 export const fetchNews = (a, changeCompState) => dispatch =>
   fetch(
-    `https://newsapi.org/v2/top-headlines?source=google-news&country=${a}&apiKey=a9b320f1f47644f99dab6b9407db90b0`
+    `https://newsapi.org/v2/top-headlines?source=google-news&country=${a}&apiKey='api_key'`
   )
     .then(response => response.json())
     .then(json => {
